@@ -1,0 +1,22 @@
+# Relative value compared to the peak in the image about which to threshold
+# the image values down to 0 or up to 1.
+thresh: 0.2  # Assumes a normalized or ampthresh'ed image
+
+# Minimum allowed radius with which to fit a circle. Must be an integer
+# because that is what hough_circle() requires. Units of pixels.
+# Calculation: in Band 3, pupil diameter is ~296.5 pixels acros 17mm, and
+# the SPM spot radius is 0.5mm. So expected radius is 296.5*0.5/17 = 8.7
+# pixels.
+min_radius: 7
+
+# Maximu allowed radius with which to fit a circle. Must be an integer
+# because that is what hough_circle() requires. Units of pixels.
+max_radius: 11
+
+# Gaussian filter width used in the canny edge detection algorithm.
+# Larger values accommodate more noise along the edges, but too large of
+# a value allows pure noise to be fitted with a circle.
+# Must be >0. The default is 1.0. Units of pixels.
+# Refer to this website for more info:
+# https://scikit-image.org/docs/stable/auto_examples/edges/plot_canny.html
+edge_sigma: 2.0

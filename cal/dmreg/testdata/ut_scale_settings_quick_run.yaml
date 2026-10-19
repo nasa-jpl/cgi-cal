@@ -1,0 +1,25 @@
+# Parameters for performing the scale fit
+# during DM registration with DMREG. These values are just for calling the
+# function quickly to make sure it runs, not for performance.
+
+# maxDeltaScaleFac : float
+#     Max +/- delta scale factor to evaluate. Must be larger than the largest
+#     possible delta scale value or else the quadratic fitting function will
+#     perform poorly. For clarification, a delta scale factor of 0.10 is a
+#     10% increase in scale. Unitless.
+maxDeltaScaleFac : 0.10
+
+# nScale : int
+#     Number of scale factors to evaluate between (1-maxDeltaScaleFac) and
+#     and (1+maxDeltaScaleFac), inclusive, for both the x- and y-axes.
+nScale : 3
+
+# nIter : int
+#     Number of times to iterate the scale fit. Each new iteration is
+#     centered about the previous best estimate.
+nIter : 1
+
+# shrinkFac : float
+#     Factor by which to change maxDeltaScaleFac after each iteration
+#     of the fit. Must be >0.0 and <= 1.0.
+shrinkFac : 0.8

@@ -1,0 +1,16 @@
+# Calibration data used for generating FPM representations in the HOWFS/C model.
+
+# pixels per lambda_central/D at which to generate the FPM. float.
+ppl: 3.7093023255813953
+
+# counterclockwise rotation of the occulter compared to the reference file.
+# [degrees]. float.
+rotDeg: 0.5
+
+# horizontal offset of the FPM center from the array's center pixel. [pixels]
+# float.
+xOffset: -5.0
+
+# vertical offset of the FPM center from the array's center pixel. [pixels]
+# float.
+yOffset: 19.0

@@ -1,0 +1,6 @@
+#
+# upsample_factor : integer (default = 100)
+# parameter passed to skimage.registration.phase_cross_correlation()
+# "Images will be registered to within 1/upsample_factor of a pixel."
+upsample_factor: 100
+

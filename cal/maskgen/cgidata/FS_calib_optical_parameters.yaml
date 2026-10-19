@@ -1,0 +1,20 @@
+# Optical parameters used in the fitting of magnification and clocking
+# for the field stop array.
+
+# umPerPixExCAM : float
+#     width and height of the ExCAM pixels. Units of microns.
+umPerPixExCAM : 13    
+
+# magModel : float
+#     Beam magnification going from FSAM to ExCAM. Based on optical model
+#     values in "CGI Optics Sizes Apertures Beam-Prints 20200609-B.xlsx".
+#     51.5/41.66 = 1.2362     (ratio of f-numbers)
+#     Or, as computed from values in roman_phase_jpl.py v1.2.1:
+#     At ExCAM: sampling_m = 8.9284064e-06  at 5.75e-07
+#     At Field Stop: wavefront.dx = 7.229503e-06   at 5.75e-07 m
+#     8.9284064e-06/7.229503e-06 = 1.2349958773099619 
+magModel : 1.2350
+
+# aoiDeg : float
+#     Angle of incidence of the beam on the field stop array. Units of degrees.
+aoiDeg : 5.0

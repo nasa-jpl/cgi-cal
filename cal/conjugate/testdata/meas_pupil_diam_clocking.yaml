@@ -1,0 +1,8 @@
+# clockDegPupil : float
+#     Measured counterclockwise rotation of the pupil in ExCAM image.
+#     Units of degrees.
+clockDegPupil: 0.0
+# diamPupil : float
+#     Measured (unmasked) diameter of the pupil in ExCAM image.
+#     Units of pixels.
+diamPupil: 386.0

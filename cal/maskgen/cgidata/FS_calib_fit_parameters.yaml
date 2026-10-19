@@ -1,0 +1,63 @@
+# Optical parameters used in the fitting of magnification and clocking
+# for the field stop array.
+
+# nIter : int
+#     Number of quadratic fitting iterations to perform. Better to perform a
+#     few iterations to overcome the higher-than-quadratic terms in the cost
+#     function.  
+nIter : 3
+
+# nClock : int
+#     Number of clocking values to check when determining clocking.
+#     The range of values is centered on zero.
+nClock : 5
+
+# clockMaxDeg : float
+#     When computing clocking, the nClock values checked span a range covering
+#     +/- clockDegMax. Units of degrees. It is better for this value to exceed
+#     the actual expected range of values (only a few milliradians) in order to
+#     get a better quadratic fit to the nClock data points.
+clockMaxDeg : 2.0
+
+# nMag : int
+#     Number of magnification values to check when determining clocking.
+#     The range of values is centered on zero.
+nMag : 7
+
+# DeltaMag : float
+#     When computing magnification, the nMag values checked span a range
+#     covering 1 +/- DeltaMag. Unitless. It is better for this value to exceed
+#     the actual expected range of values (around 1%) in order to get a better
+#     quadratic fit to the nMag data points.
+DeltaMag : 0.05
+
+# radiusROI : float
+#     radius in pixels of the regions of interest (ROIs) where the masks are
+#     expected to be.  Everything outside those ROIs is zeroed out. ROIs
+#     should be oversized to allow for magnification and clocking errors.
+radiusROI: 60 
+
+# rotation : float
+#     Expected rotation of the masks off nominal. Mainly intended as values
+#     of 0 or 90 since the rest of the clocking is being estimated. A value
+#     of 0 means the spots are along the horizontal axis in the input array
+#     and a value of 90 means they are along the vertical axis.
+#     Units of degrees in a counterclockwise direction.
+rotation: 90
+
+# threshRatio : float
+#     Normalized threshold ratio. Pixels less than threshRatio times the peak
+#     of the image are zeroed, and all other pixels become ones. Want a lower
+#     value to catch more pixels in the mask, but need large enough not to 
+#     catch noise or possibly ghosts in the image.
+threshRatio : 3.0e-2
+
+# nPixFFT : int
+#     Number of points across to zero-pad the image to before FFT'ing.
+nPixFFT : 2048
+
+# nPixOut : int
+#     Number of pixels across to keep (in a square array) of the squared
+#     FFT'ed image that was padded to nPixFFT. Only this smaller array is used
+#     to compute the fit of the model-based image to the actual image.
+nPixOut : 70

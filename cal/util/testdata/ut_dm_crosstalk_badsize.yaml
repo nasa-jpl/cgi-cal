@@ -1,0 +1,10 @@
+# array size does not match nact
+crosstalk:
+- 0.1
+- 0.2
+- 0.3
+- 0.4
+k_diag: 48
+nact: 48
+off_i: 1
+off_j: 0

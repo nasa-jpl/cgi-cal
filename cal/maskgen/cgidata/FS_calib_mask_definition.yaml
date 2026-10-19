@@ -1,0 +1,55 @@
+# Optical parameters used in the fitting of magnification and clocking
+# for the field stop array.
+
+# nSeg : int
+#     Number of annular segments constituting the mask. If two, then the second
+#     segment is the same as the first except rotated 180 degrees about the
+#     center of the mask. Value can be only 1 or 2.
+nSeg : 1    
+
+# rInUM : float
+#     Inner radius of the mask in microns at the plane of the mask.
+#     rInLamD*fnumber*wavelength*1e6 = 2.3*41.626*575e-9*1e6 = 55.050385
+rInUM : 55.05038500
+
+# rOutUM : float
+#     Outer radius of the mask in microns at the plane of the mask.
+#     rOutLamD*fnumber*wavelength*1e6 = 9.7*41.626*575e-9*1e6 = 232.169015
+rOutUM : 232.16901500
+
+# angOpen : float
+#     Opening angle of each annular segment comprising the mask. If <=0,
+#     returns an array of zeros. If (nSeg==1 and angOpen >= 360) or
+#     (nSeg==2 and angOpen >=180), then returns an annular mask.
+angOpen : 180
+
+# angRotRight : float
+#     The rotation angle of the imaged mask on the right about its center. At
+#     0, the mask opening is centered at 3 o'clock.
+angRotRight : 0
+
+# angRotLeft : float
+#     The rotation angle of the imaged mask on the left about its center. At 0,
+#     the mask opening is centered at 3 o'clock.
+angRotLeft : 180
+
+# dTheta : float
+#     When generating the mask, the edge regions are easy to define radially
+#     but harder to define azimuthally. All the pixels within +/-dTheta of the
+#     azimuthal boundaries of the annular segment(s) are added to the set of
+#     edge pixels. Units of degrees. Making dTheta larger is safer and only
+#     slightly slower.
+dTheta : 5
+
+# lMaskSepUM : float
+#     Center-to-center separation for the two FPMs or field stops used as
+#     fiducials. Units of microns in the plane of the masks (not at ExCAM).
+#     Foreshortening from the angle of incidence is handled separately, so use
+#     the true separation value here.
+lMaskSepUM : 4.5e+3
+
+# nSubpixels : int
+#     Number of subpixels across used to make edge pixel values of the annular
+#     segment mask. The value of the mask edge pixels is the mean of all the
+#     subpixel values.
+nSubpixels : 11

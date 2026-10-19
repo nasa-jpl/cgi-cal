@@ -1,0 +1,17 @@
+# KNOWN MASK PARAMETERS
+#
+# Diameter of the high-res reference mask stored in a file  
+diamHighResMaskRef: 1000 
+# Filename prefix of the high-res reference mask
+fnPrefixHighResMaskRef: 'testdata/maskRefHighRes_'
+# Ratio of the maximum open outer diameter of the shaped pupil mask to the beam
+# diameter arriving at the shaped pupil
+diamFacSPM: 0.984
+# Outer diameter of the Lyot stop for the Narrow Field-of-View mode.
+OD_LS_NFOV: 0.80
+# Outer diameter of the Lyot stop for the Wide Field-of-View mode.
+OD_LS_WFOV: 0.91
+# Outer diameter of the Lyot stop for the Spectroscopy mode.
+OD_LS_SPEC: 0.92 
+# Outer diameter of the Lyot stop for the Rotated Spectroscopy mode.
+OD_LS_SPECROT: 0.87

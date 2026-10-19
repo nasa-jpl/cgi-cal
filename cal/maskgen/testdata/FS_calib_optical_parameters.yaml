@@ -1,0 +1,16 @@
+# Optical parameters used in the fitting of magnification and clocking
+# for the field stop array.
+
+# umPerPixExCAM : float
+#     width and height of the ExCAM pixels. Units of microns.
+umPerPixExCAM : 13    
+
+# magModel : float
+#     Beam magnification going from FSAM to ExCAM. Based on optical model
+#     values in "CGI Optics Sizes Apertures Beam-Prints 20200609-B.xlsx".
+#     51.5/41.66 = 1.2362     (ratio of f-numbers)
+magModel : 1.2362
+
+# aoiDeg : float
+#     Angle of incidence of the beam on the field stop array. Units of degrees.
+aoiDeg : 5.0

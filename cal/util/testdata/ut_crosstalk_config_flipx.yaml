@@ -1,0 +1,16 @@
+# basic dm_crosstalk config yaml for use in dm_crosstalk.dm_crosstalk
+#
+#   required parameters:
+#     off_row: int, apply the crosstalk coefficient to the actuator with this offset row
+#     off_col: int, apply the crosstalk coefficient to the actuator with this offset column
+#
+#   optional parameters:
+#     roll_row: int, np.roll(xtalk_array, roll_row, axis=0) (default = 0)
+#     roll_col: int, np.roll(xtalk_array, roll_col, axis=1) (default = 0)
+#     flip_x: bool, if True, xtalk_array = np.fliplr(xtalk_array) (default = False)
+
+off_row: 1
+off_col: 0
+roll_row: 0
+roll_col: 0
+flip_x: True

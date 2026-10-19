@@ -1,0 +1,5 @@
+# xOffsetPupil, yOffsetPupil : float
+#     x- and y-offsets of the pupil from the center pixel in the pupil image.
+#     In units of pixels.
+xOffsetPupil: 0.0
+yOffsetPupil: 0.0

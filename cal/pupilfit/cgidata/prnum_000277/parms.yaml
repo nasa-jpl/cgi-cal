@@ -1,0 +1,116 @@
+InterfaceModule: InterfaceGSW
+XYcen_DI:
+- 526
+- 508
+XYcen_PIL:
+- 523
+- 509
+XYcen_def_1:
+- 536
+- 519
+XYcen_def_2:
+- 513
+- 506
+XYcen_def_3:
+- 527
+- 532
+XYcen_def_4:
+- 525
+- 514
+bandpass: 1b
+ceq_DI: 0.0
+ceq_PIL: -0.0105
+ceq_def_1: 0.0
+ceq_def_2: 0.0
+ceq_def_3: 0.0
+ceq_def_4: 0.0
+config_fn: data/dmarx/cgi-sit/tvac/aac/pr/params_575nm.yaml
+d_focus_ref: 0.259951
+d_lens_cam_DI: 0.259951
+d_lens_cam_PIL: 0.266619
+d_lens_cam_def_1: 0.255853
+d_lens_cam_def_2: 0.25585
+d_lens_cam_def_3: 0.255842
+d_lens_cam_def_4: 0.255829
+dark_bias: null
+debug: false
+fl_focus_ref: 0.259951
+fl_lens_DI: 0.259951
+fl_lens_PIL: 0.150816
+fl_lens_def_1: 0.163099
+fl_lens_def_2: 0.173422
+fl_lens_def_3: 0.186189
+fl_lens_def_4: 0.380116
+freqmax: 0
+freqmin: 0
+freqspace: 0
+gaine: 1.0
+id_DI: 65340
+id_PIL: 65348
+id_def_1: 65356
+id_def_2: 65364
+id_def_3: 65372
+id_def_4: 65383
+images_bn: Im_
+images_pn: ./temp/images
+imnbin: 1
+listRecipe:
+- 100
+- 1
+- 100
+- 1
+- 100
+- 1
+- 100
+- 1
+- 0
+list_lens_gs:
+- def_1
+- def_2
+- def_3
+- def_4
+- PIL
+list_lens_par:
+- def_3
+- def_4
+nxgs: 343
+nxpar: 327
+remapzernlist: []
+results_bn: ''
+results_pn: data/archive/pr
+rn: 140.0
+rref0: 160.0
+zernlist:
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10
+- 11
+- 12
+- 13
+- 14
+- 15
+- 16
+- 17
+- 18
+- 19
+- 20
+- 21
+- 22
+- 23
+- 24
+- 25
+- 26
+- 27
+- 28
+- 29
+- 30
+- 31
+- 32
+- 33
+- 34
+- 35
+- 36

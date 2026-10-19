@@ -1,0 +1,9 @@
+# File with bad formatting for YAML load test.
+
+# horizontal offset of the FPM center from the array's center pixel. [pixels]
+# float.
+xOffset = 0.0
+
+# vertical offset of the FPM center from the array's center pixel. [pixels]
+# float.
+yOffset: 0.0
